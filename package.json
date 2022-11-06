@@ -23,8 +23,7 @@
   "license": "MIT",
   "devDependencies": {
     "@napi-rs/cli": "^2.11.4",
-    "@types/node": "18",
-    "ava": "^4.3.0"
+    "@types/node": "18"
   },
   "engines": {
     "node": ">= 10"
@@ -34,7 +33,7 @@
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
+    "test": "node --test",
     "version": "napi version"
   },
   "packageManager": "yarn@3.2.4"
