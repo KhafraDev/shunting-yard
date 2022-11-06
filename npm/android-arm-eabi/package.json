@@ -1,0 +1,18 @@
+{
+  "name": "@khaf/shunting-yard-android-arm-eabi",
+  "version": "0.0.0",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm"
+  ],
+  "main": "shunting-yard.android-arm-eabi.node",
+  "files": [
+    "shunting-yard.android-arm-eabi.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
