@@ -409,8 +409,7 @@ jobs:
           options: '-v ${{ github.workspace }}:/build -w /build'
           run: |
             set -e
-            apk add openssl nodejs-current npm yarn --repository="http://dl-cdn.alpinelinux.org/alpine/edge/community"
-            yarn test
+            apk add nodejs npm yarn
   test-linux-arm-gnueabihf-binding:
     name: Test bindings on armv7-unknown-linux-gnueabihf - node@${{ matrix.node }}
     needs:
