@@ -409,7 +409,7 @@ jobs:
           options: '-v ${{ github.workspace }}:/build -w /build'
           run: |
             set -e
-            apk add nodejs=18.12.1 npm=8.19.2 yarn
+            apk add nodejs-current npm yarn --repository="http://dl-cdn.alpinelinux.org/alpine/edge/community"
             yarn test
   test-linux-arm-gnueabihf-binding:
     name: Test bindings on armv7-unknown-linux-gnueabihf - node@${{ matrix.node }}
